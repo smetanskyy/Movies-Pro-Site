@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Movies Pro">
+    <meta name="description" content="Site about Movies">
+    <title>Movies Pro</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="modal.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="navTop">
+        <div id="menu">
+            <a href="index.html" class="myMenuLi" style="display: flex; flex-direction: row; align-items: center"
+                target="_self">
+                <img src="favicon.png" style="height: 28px; margin-right: 5px;" alt="MOVIES PRO" />
+                <span>MOVIES PRO</span>
+            </a>
+            <select id="selectGenres">
+                <option selected disabled>Genres</option>
+            </select>
+            <select id="selectCollection">
+                <option selected disabled>Movies Collections</option>
+                <option>Popular</option>
+                <option>Top Rated</option>
+            </select>
+        </div>
+        <form method="get" id="searchForm" class="menu" style="display: flex; flex-direction: row; align-items: center">
+            <input id="searchInput" type="search" placeholder="Search">
+            <input type="image" style="height:20px; width: auto; margin-left: 5px; margin-right: 10px;"
+                src="search.png" />
+        </form>
+        <script src="search.js"></script>
+    </div>
+    <div id="myFront" style="flex: 1 0 auto;">
+        <!--<div id="navLeft">
+            <a href="#">Movies Pro</a>
+        </div>-->
+
+        <div id="mainPart">
+            <div class="pagination"></div>
+            <div id="moviesPart"></div>
+            <div class="pagination"></div>
+        </div>
+        <!--The Modal-->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <img id="imgForModal" src="image.jpg" alt="Movies Pro" />
+                <img id="closeModal" src="closeIcon.png" alt="Movies Pro" />
+                <img id="posterModal" src="imagePoster.jpg" alt="Movies Pro" />
+                <div class="modal-div-text">
+                    <table>
+                        <tr>
+                            <td class="leftColumn">Title:</td>
+                            <td id="movieTitle">Title:</td>
+
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Original title:</td>
+                            <td id="movieOriginalTitle">Title:</td>
+
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Rate:</td>
+                            <td id="movieRate">Title:</td>
+
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Genres:</td>
+                            <td id="movieGenres"></td>
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Production countries:</td>
+                            <td id="movieProduction"></td>
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Overview:</td>
+                            <td id="movieOverview"></td>
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Homepage:</td>
+                            <td><a id="movieHomepage" href="#" target="_blank"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Release date:</td>
+                            <td id="movieRelease"></td>
+                        </tr>
+                        <tr>
+                            <td class="leftColumn">Production companies:</td>
+                            <td id="movieCompanies"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="margin: 10px; flex: 0 0 auto;">
+        <p style="margin-bottom: 2px; color: rgb(5, 83, 124);">Copyright © 2020 Smethan Inc.</p>
+        <p style="margin-top: 2px; color: lightskyblue;">
+            <a style=" color: rgb(5, 83, 124);" href="index.html">About</a> /
+            <a style=" color: rgb(5, 83, 124);" href="index.html">Privacy Policy</a> /
+            <a style=" color: rgb(5, 83, 124);" href="index.html">Contact Us</a>
+        </p>
+    </footer>
+    <script src="modal.js"></script>
+    <script src="myJS.js"></script>
+
+</body>
+
+</html>

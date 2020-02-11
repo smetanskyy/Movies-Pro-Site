@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+    background-image: url("image.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font: 16px "Times New Roman", Times, serif;
+    display: flex;
+    flex-direction: column;
+	min-height: 100%;
+}
+
+#myFront {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#moviesPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgMoviePart {
+    height: 200px;
+    width: 140px;
+    border-radius: 10px;
+}
+
+.pagination {
+    display: flex;
+    margin-right: 5px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+    .pagination button {
+        margin: 5px;
+        height: 25px;
+        width: 70px;
+        background-color: lightgrey;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .pagination label {
+        height: 20px;
+        width: 40px;
+        background-color: lightgrey;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+button:hover {
+    background-color: dodgerblue;
+}
+
+
+/* Container holding the image and the text */
+.container {
+    height: 200px;
+    width: 140px;
+    position: relative;
+    text-align: center;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px #444;
+}
+
+    .container:hover {
+        cursor: pointer;
+        transform: rotate(0deg) scale(1) translateY(10px);
+        transition: .5s all ease;
+        z-index: 1;
+    }
+
+        .container:hover > .top-left {
+            display: none;
+        }
+
+/* Top left text */
+.top-left {
+    display: block;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px 4px 4px 10px;
+}
+
+    .top-left strong {
+        font-size: 14px;
+        margin: 2px;
+        position: relative;
+    }
+
+    .top-left img {
+        height: 22px;
+        width: auto;
+        position: relative;
+        background-color: white;
+        float: left;
+        border-radius: 10px;
+    }
+
+#navTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(180deg, #ccc, #ddd 40%, #fff);
+    border: 1px solid #ccc;
+    
+}
+
+#navLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    padding: 10px;
+    background-image: linear-gradient(180deg, #2a4fd0, #606fd1 40%, #95a9dd);
+}
+
+a {
+    color: aliceblue;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+    a:active {
+        text-decoration: underline;
+    }
+
+/*a:hover {
+        text-decoration: underline;
+    }*/
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 5px 5px 10px;
+    flex-wrap: wrap;
+}
+
+.myMenuLi {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: linear-gradient(180deg, #2a4fd0, #606fd1 40%, #95a9dd);
+    border-radius: .5em;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 7px;
+}
+
+select {
+    outline: 0px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 700;
+    color: #444;
+    width: 200px;
+    margin-left: 5px;
+    padding: 3px 20px 3px 20px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: .5em;
+}
